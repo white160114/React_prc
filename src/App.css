@@ -33,6 +33,11 @@
   }
 }
 
+button{
+  color: aqua;
+  background: crimson;
+}
+
 .card {
   padding: 2em;
 }
