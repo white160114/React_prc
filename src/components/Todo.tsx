@@ -34,7 +34,7 @@ const Todo = () => {
     const [todos, setTodos] = useState <Todo[]>(todoList);
     
     // 削除
-    const deleteToDo = (id: number) => {
+    const deleteTodo = (id: number) => {
         const newToDos = todos.filter((todo) =>{
             return todo.id !== id;
         });
@@ -42,12 +42,12 @@ const Todo = () => {
     };
 
     // 作成
-    const createToDo = (todo: Todo) => {
+    const createTodo = (todo: Todo) => {
         setTodos([...todos,todo]);
     };
 
     // 更新
-    const updateToDo = (todo: Todo) => {
+    const updateTodo = (todo: Todo) => {
         const newToDos = todos.map((_todo) => {
             return _todo.id === todo.id ? {..._todo, ...todo} : {..._todo};
         });
