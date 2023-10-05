@@ -4,8 +4,8 @@ import { Todo } from "./Todo";
 // 受け取るPropsの型を指定する
 type ItemProps = {
     todo: Todo;
-    complete: Function;
-    updateTodo: Function;
+    complete: (id: number) => void;
+    updateTodo: (up: object) => void;
 };
 
 export const Item: React.FC<ItemProps> = ({ todo, complete, updateTodo }) =>{

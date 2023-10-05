@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 type FormProps = {
-    createTodo: Function;
+    createTodo: (cr: object) => void;
 };
 
 const Form: React.FC<FormProps> = ({ createTodo }) => {

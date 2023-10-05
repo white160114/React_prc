@@ -5,8 +5,8 @@ import { Todo } from "./Todo";
 // 受け取るPropsの型を定義する
 type Listprops = {
     todos: Todo[];
-    deleteTodo: Function;
-    updateTodo: Function;
+    deleteTodo: (dl: number) => void;
+    updateTodo: (up: object) => void;
 }
 
 const List: React.FC<Listprops> = ({ todos, deleteTodo, updateTodo }) => {
