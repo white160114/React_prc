@@ -56,7 +56,6 @@ const Todo = () => {
 
     return (
         <>
-          // 各々に必要なPropsを渡す
           <List todos={todos} deleteTodo={deleteTodo} updateTodo={updateTodo} />
           <Form createTodo={createTodo} />
         </>
